@@ -49,7 +49,7 @@ def index():
             file.save(file_location)
 
             # Predict the tumor
-            result, confidence = predict_tumor(file_location)
+            
 
             # Return result along with image path for display
             return render_template('index.html', result=result, confidence=f"{confidence*100:.2f}%", file_path=f'/uploads/{file.filename}')
