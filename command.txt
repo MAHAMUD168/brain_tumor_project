@@ -1,0 +1,6 @@
+source .venv/bin/activate
+pip install tensorflow
+pip install flask tensorflow numpy
+pip install Pillow
+
+
